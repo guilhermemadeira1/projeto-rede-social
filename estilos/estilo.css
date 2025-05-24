@@ -9,7 +9,7 @@ main{
     position: relative;
     height: 100vh; /*100vh e 100vw faz com que o corpo da página ocupe exatamente o tamanho da tela do navegador*/
     width: 100vw;
-    background: blueviolet url('../pacote-d013/imagens/fundo-madeira.jpg') top center no-repeat;
+    background: url('../pacote-d013/imagens/fundo-madeira.jpg') top center no-repeat;
     background-size: cover;
 }
 #telefone{
@@ -18,11 +18,31 @@ main{
     left:50%;
     width: 311px;
     height: 627px;
-    border-radius: 50px;
+    border-radius: 50px; /*borda arrendondada no conteiner*/
+    box-shadow: 0px 0px 20px 0px #1f0e026e ; /*sombra no conteiner*/
     transform: translate(-50%,-50%) scale(0.7);
-    background-color: #381b0780;
+    background-color: #1f0e0248;
     background-image: url('../pacote-d013/imagens/frame-iphone.png');
     background-repeat: no-repeat;
+}
+#redes-sociais{
+    text-align: right;
+}
+#redes-sociais a{
+    display: block;
+}
+#redes-sociais img{
+    width: 40px;
+    margin: 5px 5px 0px 0px;
+    border-radius: 50%;
+    box-shadow: 3px 3px 3px 0px #1f0e02b2; 
+}
+#redes-sociais img:hover{
+    border: #ffffff 1px solid;
+    box-shadow: 3px 6px 3px 0px #1f0e02b2;
+    box-sizing: border-box; /*faz o elemento manter o tamanho original quando a borda aparecer*/
+    transform: translate(-2px, -2px); /*movimenta pro lado e pra cima*/ 
+    transition: border 1s, box-shadow 0.3s, transform 0.3s; /*aplica transição de 1s para border e meio segundo para box-shadow e transform*/
 }
 iframe{
     position: absolute;
