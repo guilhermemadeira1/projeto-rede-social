@@ -1,0 +1,27 @@
+@charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+}
+::-webkit-scrollbar{ /*remove as barras de rolagem lateral e vertical da tela*/
+    width: 0px;
+    height: 0px;
+}
+img{
+    width: 100vw;
+}
+a{
+    display: block;
+    padding: 30px;
+    margin: -10px;
+    background-color: #af2b2b;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2em;
+}
+a:hover{
+    background-color: #ec5454;
+    transition: 0.3s;
+}
